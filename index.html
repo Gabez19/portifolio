@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriel Zanolla | Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">GZ<span class="dot">.</span></span>
+      <div class="nav-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#skills">Skills</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <button class="menu-btn" id="menuBtn"><i class="fas fa-bars"></i></button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#sobre" onclick="closeMobile()">Sobre</a>
+      <a href="#projetos" onclick="closeMobile()">Projetos</a>
+      <a href="#skills" onclick="closeMobile()">Skills</a>
+      <a href="#contato" onclick="closeMobile()">Contato</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <div class="grid-lines"></div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title reveal">
+          Olá, sou<br>
+          <span class="highlight">Gabriel Zanolla</span>
+        </h1>
+        <p class="hero-sub reveal delay-1">
+          Estudante de ADS · Design de Produto · UX/UI · Gestão de Projetos
+        </p>
+        <div class="hero-cta reveal delay-2">
+          <a href="#projetos" class="btn-primary">Ver projetos</a>
+          <a href="#contato" class="btn-ghost">Entrar em contato</a>
+        </div>
+      </div>
+      <div class="hero-photo reveal delay-1">
+        <img src="images/my-profile.png" alt="Gabriel Zanolla">
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="section-label reveal">// sobre mim</div>
+      <div class="sobre-grid">
+        <div class="sobre-text reveal delay-1">
+          <h2>Tecnologia como<br><span class="highlight">ferramenta de impacto</span></h2>
+          <p>Estudante de Análise e Desenvolvimento de Sistemas na UCB, com experiência prática em liderança de projetos, prototipagem no Figma e desenvolvimento de interfaces.</p>
+          <p>Liderei equipes multidisciplinares em projetos reais com parceiros como <strong>Banco do Brasil</strong> e <strong>Porto Digital</strong>, conduzindo da concepção à apresentação para stakeholders.</p>
+          <p>Tenho interesse na interseção entre tecnologia e experiência do usuário — onde o problema humano encontra a solução digital.</p>
+          <div class="sobre-stats">
+            <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Projetos liderados</span></div>
+            <div class="stat"><span class="stat-num">30+</span><span class="stat-label">Pessoas impactadas</span></div>
+            <div class="stat"><span class="stat-num">6</span><span class="stat-label">Pessoas no time</span></div>
+          </div>
+        </div>
+        <div class="sobre-card reveal delay-2">
+          <div class="card-inner">
+            <div class="card-tag">Em formação</div>
+            <div class="card-school">UCB · ADS</div>
+            <div class="card-period">2024 → 2026</div>
+            <div class="card-divider"></div>
+            <div class="card-item"><i class="fas fa-map-marker-alt"></i> Brasília, DF</div>
+            <div class="card-item"><i class="fas fa-language"></i> PT · EN intermediário</div>
+            <div class="card-item"><i class="fas fa-briefcase"></i> Aberto a remoto</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projetos" id="projetos">
+    <div class="container">
+      <div class="section-label reveal">// projetos</div>
+      <h2 class="section-title reveal delay-1">O que já construí</h2>
+      <div class="projeto-destaque reveal delay-2">
+        <div class="projeto-destaque-info">
+          <div class="projeto-tag">Projeto Principal · Porto Digital / UCB</div>
+          <h3>BB Micofin</h3>
+          <p>Aplicativo de educação financeira para microempreendedores, desenvolvido em parceria com o <strong>Banco do Brasil</strong> e <strong>Porto Digital</strong>. Liderei uma equipe de 6 pessoas, aplicando metodologias ágeis e entregando 100% das demandas no prazo.</p>
+          <div class="projeto-meta">
+            <span><i class="fas fa-users"></i> Equipe de 6</span>
+            <span><i class="fas fa-calendar"></i> Ago/2024 – Jul/2025</span>
+            <span><i class="fas fa-trophy"></i> Validado pelo BB</span>
+          </div>
+          <div class="projeto-tech">
+            <span>Figma</span><span>UX/UI</span><span>Agile</span><span>Gamificação</span>
+          </div>
+          <a href="https://github.com/Gabez19/bb-micofin" target="_blank" class="btn-primary">Ver no GitHub</a>
+        </div>
+        <div class="projeto-destaque-visual">
+          <img src="images/bb-micofin-screen.png" alt="BB Micofin screenshot">
+        </div>
+      </div>
+      <div class="projetos-grid">
+        <div class="projeto-card reveal">
+          <div class="projeto-card-top">
+            <div class="projeto-tag-small">Porto Digital / UCB</div>
+            <h4>Polui Menos</h4>
+            <p>Protótipo de app para mapeamento de focos de poluição urbana. Apliquei boas práticas de UX/UI e apresentei para stakeholders estratégicos.</p>
+          </div>
+          <div class="projeto-card-bottom">
+            <div class="projeto-tech small"><span>Figma</span><span>UX/UI</span><span>Prototipagem</span></div>
+          </div>
+        </div>
+        <div class="projeto-card reveal delay-1">
+          <div class="projeto-card-top">
+            <div class="projeto-tag-small">HTML · CSS · JS</div>
+            <h4>Quiz Lado Sombrio</h4>
+            <p>Site de quiz interativo onde usuários descobrem qual vilão de filmes se assemelha à sua personalidade.</p>
+          </div>
+          <div class="projeto-card-bottom">
+            <div class="projeto-tech small"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="https://personagem-ficticio.vercel.app/" target="_blank" class="btn-link">Ver projeto <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="projeto-card reveal delay-2">
+          <div class="projeto-card-top">
+            <div class="projeto-tag-small">Voluntário · UCB</div>
+            <h4>Informática para Idosos</h4>
+            <p>Ensinei mais de 30 idosos a utilizar ferramentas digitais, adaptando conteúdos para diferentes níveis de conhecimento.</p>
+          </div>
+          <div class="projeto-card-bottom">
+            <div class="projeto-tech small"><span>Educação</span><span>Inclusão digital</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="skills" id="skills">
+  <div class="container">
+    <div class="section-label reveal">// habilidades</div>
+    <h2 class="section-title reveal delay-1">Stack & Ferramentas</h2>
+    <div class="skills-grid reveal delay-2">
+
+      <div class="skill-group">
+        <div class="skill-group-title">Design & Produto</div>
+        <div class="skill-items">
+          <div class="skill-item"><i class="fa-brands fa-figma"></i><span>Figma</span></div>
+          <div class="skill-item"><i class="fas fa-pencil-ruler"></i><span>UX/UI</span></div>
+          <div class="skill-item"><i class="fas fa-sitemap"></i><span>Prototipagem</span></div>
+          <div class="skill-item"><i class="fas fa-tasks"></i><span>Agile</span></div>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-title">Desenvolvimento Web</div>
+        <div class="skill-items">
+          <div class="skill-item"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
+          <div class="skill-item"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
+          <div class="skill-item"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+          <div class="skill-item"><i class="fa-brands fa-react"></i><span>React</span></div>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-title">Mobile & Ferramentas</div>
+        <div class="skill-items">
+          <div class="skill-item"><i class="fas fa-mobile-alt"></i><span>Kotlin <span style="font-size:0.75rem; color: var(--accent); opacity:0.7">· aprendendo</span></span></div>
+          <div class="skill-item"><i class="fa-brands fa-android"></i><span>Android Studio</span></div>
+          <div class="skill-item"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+          <div class="skill-item"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <section class="contato" id="contato">
+    <div class="container">
+      <div class="section-label reveal">// contato</div>
+      <h2 class="section-title reveal delay-1">Vamos conversar?</h2>
+      <p class="contato-sub reveal delay-2">Estou buscando estágio em UX/UI, Produto ou Desenvolvimento Android. Manda uma mensagem!</p>
+      <div class="contato-links reveal delay-3">
+        <a href="mailto:zagabriel.edu@gmail.com" class="contato-card">
+          <i class="fas fa-envelope"></i><span>zagabriel.edu@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/gabrielbza/" target="_blank" class="contato-card">
+          <i class="fab fa-linkedin"></i><span>linkedin.com/in/gabrielbza</span>
+        </a>
+        <a href="https://github.com/Gabez19" target="_blank" class="contato-card">
+          <i class="fab fa-github"></i><span>github.com/Gabez19</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Gabriel Zanolla · 2026 · Feito com HTML, CSS & JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
