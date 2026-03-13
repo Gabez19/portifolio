@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="images/my-picture.png">
 </head>
 <body>
 
@@ -19,6 +20,7 @@
         <a href="#sobre">Sobre</a>
         <a href="#projetos">Projetos</a>
         <a href="#skills">Skills</a>
+        <a href="#curriculo">Currículo</a>
         <a href="#contato">Contato</a>
       </div>
       <button class="menu-btn" id="menuBtn"><i class="fas fa-bars"></i></button>
@@ -27,6 +29,7 @@
       <a href="#sobre" onclick="closeMobile()">Sobre</a>
       <a href="#projetos" onclick="closeMobile()">Projetos</a>
       <a href="#skills" onclick="closeMobile()">Skills</a>
+      <a href="#curriculo" onclick="closeMobile()">Currículo</a>
       <a href="#contato" onclick="closeMobile()">Contato</a>
     </div>
   </nav>
@@ -150,45 +153,66 @@
     </div>
   </section>
 
-<section class="skills" id="skills">
-  <div class="container">
-    <div class="section-label reveal">// habilidades</div>
-    <h2 class="section-title reveal delay-1">Stack & Ferramentas</h2>
-    <div class="skills-grid reveal delay-2">
-
-      <div class="skill-group">
-        <div class="skill-group-title">Design & Produto</div>
-        <div class="skill-items">
-          <div class="skill-item"><i class="fa-brands fa-figma"></i><span>Figma</span></div>
-          <div class="skill-item"><i class="fas fa-pencil-ruler"></i><span>UX/UI</span></div>
-          <div class="skill-item"><i class="fas fa-sitemap"></i><span>Prototipagem</span></div>
-          <div class="skill-item"><i class="fas fa-tasks"></i><span>Agile</span></div>
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-label reveal">// habilidades</div>
+      <h2 class="section-title reveal delay-1">Stack & Ferramentas</h2>
+      <div class="skills-grid reveal delay-2">
+        <div class="skill-group">
+          <div class="skill-group-title">Design & Produto</div>
+          <div class="skill-items">
+            <div class="skill-item"><i class="fa-brands fa-figma"></i><span>Figma</span></div>
+            <div class="skill-item"><i class="fas fa-pencil-ruler"></i><span>UX/UI</span></div>
+            <div class="skill-item"><i class="fas fa-sitemap"></i><span>Prototipagem</span></div>
+            <div class="skill-item"><i class="fas fa-tasks"></i><span>Agile</span></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Desenvolvimento Web</div>
+          <div class="skill-items">
+            <div class="skill-item"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
+            <div class="skill-item"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
+            <div class="skill-item"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+            <div class="skill-item"><i class="fa-brands fa-react"></i><span>React</span></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Mobile & Ferramentas</div>
+          <div class="skill-items">
+            <div class="skill-item"><i class="fas fa-mobile-alt"></i><span>Kotlin <span style="font-size:0.75rem; color: var(--accent); opacity:0.7">· aprendendo</span></span></div>
+            <div class="skill-item"><i class="fa-brands fa-android"></i><span>Android Studio</span></div>
+            <div class="skill-item"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+            <div class="skill-item"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+          </div>
         </div>
       </div>
-
-      <div class="skill-group">
-        <div class="skill-group-title">Desenvolvimento Web</div>
-        <div class="skill-items">
-          <div class="skill-item"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
-          <div class="skill-item"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
-          <div class="skill-item"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
-          <div class="skill-item"><i class="fa-brands fa-react"></i><span>React</span></div>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <div class="skill-group-title">Mobile & Ferramentas</div>
-        <div class="skill-items">
-          <div class="skill-item"><i class="fas fa-mobile-alt"></i><span>Kotlin <span style="font-size:0.75rem; color: var(--accent); opacity:0.7">· aprendendo</span></span></div>
-          <div class="skill-item"><i class="fa-brands fa-android"></i><span>Android Studio</span></div>
-          <div class="skill-item"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
-          <div class="skill-item"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
+
+  <section class="curriculo" id="curriculo">
+    <div class="container">
+      <div class="section-label reveal">// currículo</div>
+      <h2 class="section-title reveal delay-1">Baixar Currículo</h2>
+      <div class="curriculo-cards reveal delay-2">
+        <a href="files/Curriculo_Gabriel_Barbsosa_Zanolla_PT.pdf" download class="curriculo-card">
+          <div class="curriculo-icon"><i class="fas fa-file-pdf"></i></div>
+          <div class="curriculo-info">
+            <span class="curriculo-lang">Português</span>
+            <span class="curriculo-desc">Versão em PT-BR · .pdf</span>
+          </div>
+          <i class="fas fa-download curriculo-dl"></i>
+        </a>
+        <a href="files/Curriculo_Gabriel_Barbsosa_Zanolla_EN.pdf" download class="curriculo-card">
+          <div class="curriculo-icon"><i class="fas fa-file-pdf"></i></div>
+          <div class="curriculo-info">
+            <span class="curriculo-lang">English</span>
+            <span class="curriculo-desc">English version · .pdf</span>
+          </div>
+          <i class="fas fa-download curriculo-dl"></i>
+        </a>
+      </div>
+    </div>
+  </section>
 
   <section class="contato" id="contato">
     <div class="container">
