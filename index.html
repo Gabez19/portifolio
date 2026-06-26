@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gabriel Zanolla | Portfólio</title>
+  <title data-i18n="meta.title">Gabriel Zanolla | Portfólio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -17,20 +17,26 @@
     <div class="nav-inner">
       <span class="nav-logo">GZ<span class="dot">.</span></span>
       <div class="nav-links">
-        <a href="#sobre">Sobre</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#skills">Skills</a>
-        <a href="#curriculo">Currículo</a>
-        <a href="#contato">Contato</a>
+        <a href="#sobre" data-i18n="nav.sobre">Sobre</a>
+        <a href="#projetos" data-i18n="nav.projetos">Projetos</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#curriculo" data-i18n="nav.curriculo">Currículo</a>
+        <a href="#contato" data-i18n="nav.contato">Contato</a>
       </div>
-      <button class="menu-btn" id="menuBtn"><i class="fas fa-bars"></i></button>
+      <div class="nav-actions">
+        <button class="lang-btn" id="langBtn" aria-label="Mudar idioma / Switch language">
+          <span class="lang-btn-flag" aria-hidden="true">🌐</span>
+          <span id="langBtnLabel">EN</span>
+        </button>
+        <button class="menu-btn" id="menuBtn"><i class="fas fa-bars"></i></button>
+      </div>
     </div>
     <div class="mobile-menu" id="mobileMenu">
-      <a href="#sobre" onclick="closeMobile()">Sobre</a>
-      <a href="#projetos" onclick="closeMobile()">Projetos</a>
-      <a href="#skills" onclick="closeMobile()">Skills</a>
-      <a href="#curriculo" onclick="closeMobile()">Currículo</a>
-      <a href="#contato" onclick="closeMobile()">Contato</a>
+      <a href="#sobre" onclick="closeMobile()" data-i18n="nav.sobre">Sobre</a>
+      <a href="#projetos" onclick="closeMobile()" data-i18n="nav.projetos">Projetos</a>
+      <a href="#skills" onclick="closeMobile()" data-i18n="nav.skills">Skills</a>
+      <a href="#curriculo" onclick="closeMobile()" data-i18n="nav.curriculo">Currículo</a>
+      <a href="#contato" onclick="closeMobile()" data-i18n="nav.contato">Contato</a>
     </div>
   </nav>
 
@@ -43,15 +49,15 @@
     <div class="hero-content">
       <div class="hero-text">
         <h1 class="hero-title reveal">
-          Olá, sou<br>
+          <span data-i18n="hero.greeting">Olá, sou</span><br>
           <span class="highlight">Gabriel Zanolla</span>
         </h1>
-        <p class="hero-sub reveal delay-1">
+        <p class="hero-sub reveal delay-1" data-i18n="hero.subtitle">
           Estudante de ADS · Design de Produto · UX/UI · Gestão de Projetos
         </p>
         <div class="hero-cta reveal delay-2">
-          <a href="#projetos" class="btn-primary">Ver projetos</a>
-          <a href="#contato" class="btn-ghost">Entrar em contato</a>
+          <a href="#projetos" class="btn-primary" data-i18n="hero.ctaProjects">Ver projetos</a>
+          <a href="#contato" class="btn-ghost" data-i18n="hero.ctaContact">Entrar em contato</a>
         </div>
       </div>
       <div class="hero-photo reveal delay-1">
@@ -59,35 +65,35 @@
       </div>
     </div>
     <div class="hero-scroll">
-      <span>scroll</span>
+      <span data-i18n="hero.scroll">scroll</span>
       <div class="scroll-line"></div>
     </div>
   </section>
 
   <section class="sobre" id="sobre">
     <div class="container">
-      <div class="section-label reveal">// sobre mim</div>
+      <div class="section-label reveal" data-i18n="sobre.label">// sobre mim</div>
       <div class="sobre-grid">
         <div class="sobre-text reveal delay-1">
-          <h2>Tecnologia como<br><span class="highlight">ferramenta de impacto</span></h2>
-          <p>Estudante de Análise e Desenvolvimento de Sistemas na UCB, com experiência prática em liderança de projetos, prototipagem no Figma e desenvolvimento de interfaces.</p>
-          <p>Liderei equipes multidisciplinares em projetos reais com parceiros como <strong>Banco do Brasil</strong> e <strong>Porto Digital</strong>, conduzindo da concepção à apresentação para stakeholders.</p>
-          <p>Tenho interesse na interseção entre tecnologia e experiência do usuário — onde o problema humano encontra a solução digital.</p>
+          <h2><span data-i18n="sobre.titleLine1">Tecnologia como</span><br><span class="highlight" data-i18n="sobre.titleLine2">ferramenta de impacto</span></h2>
+          <p data-i18n="sobre.p1">Estudante de Análise e Desenvolvimento de Sistemas na UCB, com experiência prática em liderança de projetos, prototipagem no Figma e desenvolvimento de interfaces.</p>
+          <p data-i18n="sobre.p2">Liderei equipes multidisciplinares em projetos reais com parceiros como <strong>Banco do Brasil</strong> e <strong>Porto Digital</strong>, conduzindo da concepção à apresentação para stakeholders.</p>
+          <p data-i18n="sobre.p3">Tenho interesse na interseção entre tecnologia e experiência do usuário — onde o problema humano encontra a solução digital.</p>
           <div class="sobre-stats">
-            <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Projetos liderados</span></div>
-            <div class="stat"><span class="stat-num">30+</span><span class="stat-label">Pessoas impactadas</span></div>
-            <div class="stat"><span class="stat-num">6</span><span class="stat-label">Pessoas no time</span></div>
+            <div class="stat"><span class="stat-num">4+</span><span class="stat-label" data-i18n="sobre.stat1">Projetos liderados</span></div>
+            <div class="stat"><span class="stat-num">30+</span><span class="stat-label" data-i18n="sobre.stat2">Pessoas impactadas</span></div>
+            <div class="stat"><span class="stat-num">8+</span><span class="stat-label" data-i18n="sobre.stat3">Pessoas no time</span></div>
           </div>
         </div>
         <div class="sobre-card reveal delay-2">
           <div class="card-inner">
-            <div class="card-tag">Em formação</div>
+            <div class="card-tag" data-i18n="sobre.cardTag">Último semestre</div>
             <div class="card-school">UCB · ADS</div>
-            <div class="card-period">2024 → 2026</div>
+            <div class="card-period">2024 → Jul/2026</div>
             <div class="card-divider"></div>
-            <div class="card-item"><i class="fas fa-map-marker-alt"></i> Brasília, DF</div>
-            <div class="card-item"><i class="fas fa-language"></i> PT · EN intermediário</div>
-            <div class="card-item"><i class="fas fa-briefcase"></i> Aberto a remoto</div>
+            <div class="card-item"><i class="fas fa-map-marker-alt"></i> <span data-i18n="sobre.cardLocation">Brasília, DF</span></div>
+            <div class="card-item"><i class="fas fa-language"></i> <span data-i18n="sobre.cardLanguage">PT · EN intermediário</span></div>
+            <div class="card-item"><i class="fas fa-briefcase"></i> <span data-i18n="sobre.cardRemote">Aberto a remoto</span></div>
           </div>
         </div>
       </div>
@@ -96,57 +102,71 @@
 
   <section class="projetos" id="projetos">
     <div class="container">
-      <div class="section-label reveal">// projetos</div>
-      <h2 class="section-title reveal delay-1">O que já construí</h2>
+      <div class="section-label reveal" data-i18n="projetos.label">// projetos</div>
+      <h2 class="section-title reveal delay-1" data-i18n="projetos.title">O que já construí</h2>
+
       <div class="projeto-destaque reveal delay-2">
         <div class="projeto-destaque-info">
-          <div class="projeto-tag">Projeto Principal · Porto Digital / UCB</div>
-          <h3>BB Micofin</h3>
-          <p>Aplicativo de educação financeira para microempreendedores, desenvolvido em parceria com o <strong>Banco do Brasil</strong> e <strong>Porto Digital</strong>. Liderei uma equipe de 6 pessoas, aplicando metodologias ágeis e entregando 100% das demandas no prazo.</p>
+          <div class="projeto-tag projeto-tag-destaque"><i class="fas fa-star"></i> <span data-i18n="projetos.crash.tag">Projeto Principal · Residência Porto Digital / UCB</span></div>
+          <h3 data-i18n="projetos.crash.title">SDK de Monitoramento de Crashes e ANRs</h3>
+          <p data-i18n="projetos.crash.desc">SDK em Kotlin para captura automática de crashes e ANRs em aplicativos Android, com coleta de metadados do dispositivo e envio estruturado para análise e diagnóstico de falhas.</p>
           <div class="projeto-meta">
-            <span><i class="fas fa-users"></i> Equipe de 6</span>
-            <span><i class="fas fa-calendar"></i> Ago/2024 – Jul/2025</span>
-            <span><i class="fas fa-trophy"></i> Validado pelo BB</span>
+            <span><i class="fas fa-code-branch"></i> <span data-i18n="projetos.crash.meta1">100% Kotlin</span></span>
+            <span><i class="fas fa-database"></i> <span data-i18n="projetos.crash.meta2">Persistência local com Room</span></span>
+            <span><i class="fas fa-bug"></i> <span data-i18n="projetos.crash.meta3">Captura de crash e ANR</span></span>
           </div>
           <div class="projeto-tech">
-            <span>Figma</span><span>UX/UI</span><span>Agile</span><span>Gamificação</span>
+            <span>Kotlin</span><span>Android SDK</span><span>Room</span><span>Coroutines</span>
           </div>
-          <a href="https://github.com/Gabez19/bb-micofin" target="_blank" class="btn-primary">Ver no GitHub</a>
+          <a href="https://github.com/Gabez19/crash-sdk-ucb-cast-2026" target="_blank" class="btn-primary" data-i18n="projetos.crash.cta">Ver no GitHub</a>
         </div>
-        <div class="projeto-destaque-visual">
-          <img src="images/bb-micofin-screen.png" alt="BB Micofin screenshot">
+        <div class="projeto-destaque-visual projeto-destaque-visual-dupla">
+          <img src="images/crash-sdk-app.png" alt="Painel de testes do app — Crash SDK">
+          <img src="images/crash-sdk-database.png" alt="Database Inspector com crash logs — Crash SDK">
         </div>
       </div>
+
       <div class="projetos-grid">
-        <div class="projeto-card reveal">
+        <div class="projeto-card projeto-card-destaque reveal">
           <div class="projeto-card-top">
-            <div class="projeto-tag-small">Porto Digital / UCB</div>
-            <h4>Polui Menos</h4>
-            <p>Protótipo de app para mapeamento de focos de poluição urbana. Apliquei boas práticas de UX/UI e apresentei para stakeholders estratégicos.</p>
+            <div class="projeto-tag-small projeto-tag-small-destaque"><i class="fas fa-star"></i> <span data-i18n="projetos.bbmicofin.tag">Destaque · Porto Digital / UCB</span></div>
+            <h4>BB Micofin</h4>
+            <p data-i18n="projetos.bbmicofin.desc">Aplicativo de educação financeira para microempreendedores, desenvolvido em parceria com o Banco do Brasil e Porto Digital. Liderei uma equipe de 6 pessoas, aplicando metodologias ágeis e entregando 100% das demandas no prazo.</p>
           </div>
           <div class="projeto-card-bottom">
-            <div class="projeto-tech small"><span>Figma</span><span>UX/UI</span><span>Prototipagem</span></div>
+            <div class="projeto-tech small"><span>Figma</span><span>UX/UI</span><span>Agile</span><span>Gamificação</span></div>
+            <a href="https://github.com/Gabez19/bb-micofin" target="_blank" class="btn-link"><span data-i18n="projetos.bbmicofin.cta">Ver no GitHub</span> <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="projeto-card reveal delay-1">
           <div class="projeto-card-top">
-            <div class="projeto-tag-small">HTML · CSS · JS</div>
-            <h4>Quiz Lado Sombrio</h4>
-            <p>Site de quiz interativo onde usuários descobrem qual vilão de filmes se assemelha à sua personalidade.</p>
+            <div class="projeto-tag-small" data-i18n="projetos.poluimenos.tag">Porto Digital / UCB</div>
+            <h4>Polui Menos</h4>
+            <p data-i18n="projetos.poluimenos.desc">Protótipo de app para mapeamento de focos de poluição urbana. Apliquei boas práticas de UX/UI e apresentei para stakeholders estratégicos.</p>
           </div>
           <div class="projeto-card-bottom">
-            <div class="projeto-tech small"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-            <a href="https://personagem-ficticio.vercel.app/" target="_blank" class="btn-link">Ver projeto <i class="fas fa-arrow-right"></i></a>
+            <div class="projeto-tech small"><span>Figma</span><span>UX/UI</span><span data-i18n="projetos.poluimenos.tech3">Prototipagem</span></div>
           </div>
         </div>
         <div class="projeto-card reveal delay-2">
           <div class="projeto-card-top">
-            <div class="projeto-tag-small">Voluntário · UCB</div>
-            <h4>Informática para Idosos</h4>
-            <p>Ensinei mais de 30 idosos a utilizar ferramentas digitais, adaptando conteúdos para diferentes níveis de conhecimento.</p>
+            <div class="projeto-tag-small">HTML · CSS · JS</div>
+            <h4 data-i18n="projetos.quiz.title">Quiz Lado Sombrio</h4>
+            <p data-i18n="projetos.quiz.desc">Site de quiz interativo onde usuários descobrem qual vilão de filmes se assemelha à sua personalidade.</p>
           </div>
           <div class="projeto-card-bottom">
-            <div class="projeto-tech small"><span>Educação</span><span>Inclusão digital</span></div>
+            <div class="projeto-tech small"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="https://personagem-ficticio.vercel.app/" target="_blank" class="btn-link"><span data-i18n="projetos.quiz.cta">Ver projeto</span> <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="projeto-card reveal delay-3">
+          <div class="projeto-card-top">
+            <div class="projeto-tag-small" data-i18n="projetos.idosos.tag">Voluntário · UCB</div>
+            <h4 data-i18n="projetos.idosos.title">Informática para Idosos</h4>
+            <p data-i18n="projetos.idosos.desc">Ensinei mais de 30 idosos a utilizar ferramentas digitais, adaptando conteúdos para diferentes níveis de conhecimento.</p>
+          </div>
+          <div class="projeto-card-bottom">
+            <div class="projeto-tech small"><span data-i18n="projetos.idosos.tech1">Educação</span><span data-i18n="projetos.idosos.tech2">Inclusão digital</span></div>
           </div>
         </div>
       </div>
@@ -155,20 +175,20 @@
 
   <section class="skills" id="skills">
     <div class="container">
-      <div class="section-label reveal">// habilidades</div>
-      <h2 class="section-title reveal delay-1">Stack & Ferramentas</h2>
+      <div class="section-label reveal" data-i18n="skills.label">// habilidades</div>
+      <h2 class="section-title reveal delay-1" data-i18n="skills.title">Stack & Ferramentas</h2>
       <div class="skills-grid reveal delay-2">
         <div class="skill-group">
-          <div class="skill-group-title">Design & Produto</div>
+          <div class="skill-group-title" data-i18n="skills.group1">Design & Produto</div>
           <div class="skill-items">
             <div class="skill-item"><i class="fa-brands fa-figma"></i><span>Figma</span></div>
             <div class="skill-item"><i class="fas fa-pencil-ruler"></i><span>UX/UI</span></div>
-            <div class="skill-item"><i class="fas fa-sitemap"></i><span>Prototipagem</span></div>
+            <div class="skill-item"><i class="fas fa-sitemap"></i><span data-i18n="skills.prototipagem">Prototipagem</span></div>
             <div class="skill-item"><i class="fas fa-tasks"></i><span>Agile</span></div>
           </div>
         </div>
         <div class="skill-group">
-          <div class="skill-group-title">Desenvolvimento Web</div>
+          <div class="skill-group-title" data-i18n="skills.group2">Desenvolvimento Web</div>
           <div class="skill-items">
             <div class="skill-item"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
             <div class="skill-item"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
@@ -177,9 +197,10 @@
           </div>
         </div>
         <div class="skill-group">
-          <div class="skill-group-title">Mobile & Ferramentas</div>
+          <div class="skill-group-title" data-i18n="skills.group3">Mobile & Ferramentas</div>
           <div class="skill-items">
-            <div class="skill-item"><i class="fas fa-mobile-alt"></i><span>Kotlin <span style="font-size:0.75rem; color: var(--accent); opacity:0.7">· aprendendo</span></span></div>
+            <div class="skill-item"><i class="fas fa-mobile-alt"></i><span>Kotlin <span class="skill-sub" data-i18n="skills.aprendendo">· aprendendo</span></span></div>
+
             <div class="skill-item"><i class="fa-brands fa-android"></i><span>Android Studio</span></div>
             <div class="skill-item"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
             <div class="skill-item"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
@@ -191,24 +212,24 @@
 
   <section class="curriculo" id="curriculo">
     <div class="container">
-      <div class="section-label reveal">// currículo</div>
-      <h2 class="section-title reveal delay-1">Baixar Currículo</h2>
+      <div class="section-label reveal" data-i18n="curriculo.label">// currículo</div>
+      <h2 class="section-title reveal delay-1" data-i18n="curriculo.title">Ver Currículo</h2>
       <div class="curriculo-cards reveal delay-2">
-        <a href="files/Curriculo_Gabriel_Barbsosa_Zanolla_PT.pdf" download class="curriculo-card">
+        <a href="files/Curriculo_Gabriel_Barbsosa_Zanolla_PT.pdf" target="_blank" rel="noopener" class="curriculo-card">
           <div class="curriculo-icon"><i class="fas fa-file-pdf"></i></div>
           <div class="curriculo-info">
             <span class="curriculo-lang">Português</span>
-            <span class="curriculo-desc">Versão em PT-BR · .pdf</span>
+            <span class="curriculo-desc" data-i18n="curriculo.ptDesc">Versão em PT-BR · .pdf</span>
           </div>
-          <i class="fas fa-download curriculo-dl"></i>
+          <i class="fas fa-arrow-up-right-from-square curriculo-dl"></i>
         </a>
-        <a href="files/Curriculo_Gabriel_Barbsosa_Zanolla_EN.pdf" download class="curriculo-card">
+        <a href="files/Curriculo_Gabriel_Barbsosa_Zanolla_EN.pdf" target="_blank" rel="noopener" class="curriculo-card">
           <div class="curriculo-icon"><i class="fas fa-file-pdf"></i></div>
           <div class="curriculo-info">
             <span class="curriculo-lang">English</span>
-            <span class="curriculo-desc">English version · .pdf</span>
+            <span class="curriculo-desc" data-i18n="curriculo.enDesc">English version · .pdf</span>
           </div>
-          <i class="fas fa-download curriculo-dl"></i>
+          <i class="fas fa-arrow-up-right-from-square curriculo-dl"></i>
         </a>
       </div>
     </div>
@@ -216,9 +237,9 @@
 
   <section class="contato" id="contato">
     <div class="container">
-      <div class="section-label reveal">// contato</div>
-      <h2 class="section-title reveal delay-1">Vamos conversar?</h2>
-      <p class="contato-sub reveal delay-2">Estou buscando estágio em UX/UI, Produto ou Desenvolvimento Android. Manda uma mensagem!</p>
+      <div class="section-label reveal" data-i18n="contato.label">// contato</div>
+      <h2 class="section-title reveal delay-1" data-i18n="contato.title">Vamos conversar?</h2>
+      <p class="contato-sub reveal delay-2" data-i18n="contato.sub">Estou buscando vagas em UX/UI, Produto ou Desenvolvimento Android. Manda uma mensagem!</p>
       <div class="contato-links reveal delay-3">
         <a href="mailto:zagabriel.edu@gmail.com" class="contato-card">
           <i class="fas fa-envelope"></i><span>zagabriel.edu@gmail.com</span>
@@ -237,6 +258,7 @@
     <p>Gabriel Zanolla · 2026</p>
   </footer>
 
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
