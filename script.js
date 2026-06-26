@@ -7,9 +7,11 @@ const menuBtn = document.getElementById('menuBtn');
 const mobileMenu = document.getElementById('mobileMenu');
 menuBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('open');
+  menuBtn.classList.toggle('open');
 });
 function closeMobile() {
   mobileMenu.classList.remove('open');
+  menuBtn.classList.remove('open');
 }
 
 const reveals = document.querySelectorAll('.reveal');
